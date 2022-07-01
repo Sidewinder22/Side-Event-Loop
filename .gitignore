@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# Build dir
+build
+
+# Eclipse IDE
+.cproject
+.project
+.settings
+
+# QTCreator IDE
+CMakeLists.txt.user
+
