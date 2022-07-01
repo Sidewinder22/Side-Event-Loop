@@ -1,26 +1,22 @@
 # src dir CMake
 
-set(HEADER_FILES
-    EventLoop.hpp)
 set(LIB
     SideEventLoopLib)
 set(EXEC
     SideEventLoop)
 
-
 add_library(${LIB}
-    EventLoop.cpp
-    ${HEADER_FILES})
+    SHARED
+    EventLoop.cpp)
 target_include_directories(${LIB}
-    PRIVATE
-    src)
+	PUBLIC 
+    ${side-event-loop_SOURCE_DIR}/include)
 
 add_executable(${EXEC}
-    main.cpp
-    ${HEADER_FILES})
+    main.cpp)
 target_include_directories(${EXEC}
-    PRIVATE
-    src)
+	PRIVATE 
+    ${side-event-loop_SOURCE_DIR}/include)
 target_link_libraries(${EXEC}
     PRIVATE
     ${LIB})

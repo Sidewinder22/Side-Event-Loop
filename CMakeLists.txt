@@ -2,7 +2,7 @@
 
 cmake_minimum_required(VERSION 3.20)
 
-project(side-event-loop)
+project(side-event-loop VERSION 1.0)
 
 set(CMAKE_CXX_STANDARD 17)
 
