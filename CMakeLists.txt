@@ -8,4 +8,5 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
-add_subdirectory(src)
+add_subdirectory(lib)
+add_subdirectory(app)
