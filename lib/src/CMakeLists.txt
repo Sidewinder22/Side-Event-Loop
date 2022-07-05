@@ -4,6 +4,8 @@ set(LIB side-event-loop-lib)
 
 add_library(${LIB}
     SHARED
+    Event.cpp
+    EventQueue.cpp
     EventLoop.cpp
 )
 
